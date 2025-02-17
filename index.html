@@ -1,0 +1,195 @@
+<!-- This template developed by Sivasundararaj - Codingwithssr 2024-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>First Angularjs website</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+
+</head>
+<body ng-app="myapp" ng-controller="myctrl">
+<nav>
+<ul>
+<li ><a href=""><!-- <img ng-src="{{img_source}}" width="190px"/></a> --><h2>CODINGWITHSSR</h2></li>
+
+<li class="hideonmobile"><a href="">{{sec}}</a></li>
+<li class="hideonmobile"><a href="#service">{{third}}</a></li>
+<li class="hideonmobile"><a href="">{{four}}</a></li>
+<li class="hideonmobile"><a href="" >{{cv}}</a></li> 
+<li onclick="showSidebar()" class="menubutton"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="30px" height="30px"><path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"/></svg></a></li>
+</ul>
+<ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="30px" height="30px"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"/></svg></a></li>
+       <li><a href="#">{{cv}}</a></li>
+      <li><a href="#">{{sec}}</a></li>
+      <li><a href="#service">{{third}}</a></li>
+      <li><a href="#">{{four}}</a></li>
+	  
+    </ul> 
+</nav>
+
+<div class="banner" >
+	<div class="left">
+		<span class="ft76">{{ttit}}</span>
+       <span class="ft77">{{bsubtit}}</span>
+<!-- 	     <a href="" class="custcv">Download CV</a>
+ -->		<span class="bid">{{tstit}}</span>
+		<div class="emailcpy">
+		<input type="text" value="test@gmail.com" placeholder="Email ID" id="myInput">
+       <button class="custbanbtn" onclick="myFunction()" id="cpy">Copy</button>
+	   </div>
+	  
+	</div>
+	<div class="right">
+	    <img ng-src="{{bannerimg}}" class="profile"/>
+<i class="fa fa-google google move1"  style=""></i>
+<i class='fa fa-linkedin-square linkedin' style=''></i>
+<i class="fa fa-github github" style=""></i>
+<i class="fa fa-whatsapp whatsapp" style=""></i>
+<i class="fa fa-behance behance" style=""></i>
+	</div>
+</div>
+
+<div class="lstlogo"> 
+<img class="deslg" ng-src="{{figma}}"  alt="figma"/>
+<img class="deslg" ng-src="{{photoshop}}"  alt="adobe-photoshop"/>
+<img class="deslg" ng-src="{{angularjs}}"  alt="angularjs"/>
+<img class="deslg" ng-src="{{javascript}}"  alt="javascript"/>
+<img class="deslg" ng-src="{{css}}"  alt="css"/>
+<img class="deslg" ng-src="{{html}}" alt="html"/>
+<img class="deslg" ng-src="{{wordpress}}" alt="wordpress"/>
+<img class="deslg" ng-src="{{corel}}" alt="coreldraw"/>
+<img class="deslg" ng-src="{{adobexd}}" alt="adobexd"/>
+</div>
+<div class="tmc" id="service">
+<span class="ftm">Comprehensive Digital Solutions:</span>
+</div>
+
+<div class="container ">
+<div class="mybox">
+	<div class="p10">
+     	<img ng-src="{{uiux}}" class="picn" />
+	</div>
+	<div class="desc">
+		<span class="ft40">{{uiuxtitle}}</span>
+		<span class="ft12">{{uiuxdes}}</span>
+	</div>
+</div>
+<div class="mybox">
+	<div class="p10">
+     		<img ng-src="{{mob}}" class="picn"/>
+	</div>
+	<div class="desc">
+		<span class="ft40">{{wmtitle}}</span>
+		<span class="ft12">{{wmdes}}</span>
+	</div>
+</div>
+<div class="mybox">
+	<div class="p10">
+     		<img ng-src="{{seo}}" class="picn"/>
+	</div>
+	<div class="desc">
+		<span class="ft40">{{seotit}}</span>
+		<span class="ft12">{{seodes}}</span>
+	</div>
+</div>
+<div class="mybox">
+	<div class="p10">
+     		<img ng-src="{{logo}}" class="picn"/>
+	</div>
+	<div class="desc">
+	<span class="ft40">{{logotit}}</span>
+		<span class="ft12">{{logodes}}</span>
+	</div>
+</div>
+<div class="mybox">
+	<div class="p10">
+     		<img ng-src="{{brnad}}" class="picn"/>
+	</div>
+	<div class="desc">
+	<span class="ft40">{{brandtit}}</span>
+		<span class="ft12">{{branddes}}</span>
+	</div>
+</div>
+</div>
+<div class="project">
+<div class="pbx">
+<div class="p11">
+     <img ng-src="{{pro}}" class="picn moves"/>
+</div>
+<span class="ft50">{{share}}</span>
+<div style="display:flex;margin-bottom:50px;">
+<a href="" class="custem-email"><img ng-src="{{email}}" class="deslg">Email</a>
+<button href="#" class="custem">Or</button>
+ <a href="" class="custem-email"><img ng-src="{{whatsup}}" class="deslg">Whatsup</a>
+</div>
+<div class="mypct">
+<a href="" class="custems">
+<img class="deslg" ng-src="{{javascript}}"  alt="javascript"/>
+<img class="deslg" ng-src="{{css}}"  alt="css"/>
+<img class="deslg" ng-src="{{html}}" alt="html"/>
+{{side}}
+</a>
+<a href="" class="custems">
+<img class="deslg" ng-src="{{css}}"  alt="css"/>
+<img class="deslg" ng-src="{{html}}" alt="html"/>
+{{bookmark}}
+</a>
+<a href="" class="custems">
+<img class="deslg" ng-src="{{javascript}}"  alt="javascript"/>
+<img class="deslg" ng-src="{{css}}"  alt="css"/>
+<img class="deslg" ng-src="{{html}}" alt="html"/>
+{{valid}}
+</a>
+<a href="" class="custems">
+<img class="deslg" ng-src="{{css}}"  alt="css"/>
+<img class="deslg" ng-src="{{html}}" alt="html"/>
+{{social}}
+</a>
+
+
+</div>
+</div>
+</div>
+<div class="footer">
+<span>@2024 All Rights Reserved.</span>
+<div class="socialli">
+<a href=""><i class="fa fa-github"></i> Github</a>/
+<a href=""><i class="fa fa-linkedin"></i> Linkedin</a>/
+<a href=""><i class="fa fa-behance"></i> Behance</a>/
+<a href=""><i class="fa fa-whatsapp"></i> Whatsup</a>/
+<a href=""><i class="fa fa-google"></i> Gmail</a>
+</div>
+</div>
+<script src="app.js"></script>
+<script  type="text/javascript">
+function showSidebar() {
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.style.display="flex";
+}
+function hideSidebar() {
+  const sidebar =  document.querySelector('.sidebar');
+  sidebar.style.display="none";
+}
+function myFunction() {
+  // Get the text field
+  var copyText = document.getElementById("myInput");
+
+  // Select the text field
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the text field
+  navigator.clipboard.writeText(copyText.value);
+  cpy.innerHTML="Copied";
+  // Alert the copied text
+  
+}
+</script>
+</body>
+</html>
+<!-- This template developed by Sivasundararaj - Codingwithssr 2024-->
